@@ -10,8 +10,8 @@ COPY . /app
 # 4. Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Expose port 8000 for your Flask app
-EXPOSE 8000
+# 5. Expose port 5000 for your Flask app
+EXPOSE 5000
 
-# 6. Run app.py when the container launches
-CMD ["python", "app.py"]
+# 6. Run application.py when the container launches
+CMD ["python", "application.py"]
